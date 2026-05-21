@@ -1,0 +1,100 @@
+
+============================================================
+  77 discrepancies across 3 sources
+============================================================
+
+[LOOT_ISK]  (20 sites differ)
+  Site                                 eve-survival          whdb                  eveuni              
+  -----------------------------------  --------------------  --------------------  --------------------
+  corecitadel                          310100000             —                     610100000           
+  coregarrison                         253400000             —                     253000000           
+  forgottencoreinformationpen          332900000             —                     330000000           
+  forgottenfrontierquarantineoutpost   49500000              —                     76500000            
+  forgottenfrontierrecursivedepot      24                    —                     92500000            
+  forgottenperimeterhabitationcoils    25000000              —                     25400000            
+  frontierbarracks                     21                    —                     86700000            
+  integratedterminus                   55500000              —                     55300000            
+  perimetercamp                        10400000              —                     9600000             
+  perimetercheckpoint                  17000000              —                     12900000            
+  phasecatalystnode                    9000000               —                     7400000             
+  sleeperdatasanctuary                 8000000               —                     10400000            
+  sleeperinformationsanctum            84000000              —                     81800000            
+  solarcell                            29500000              —                     43000000            
+  strangeenergyreadings                291800000             —                     293000000           
+  theline                              12000000              —                     10400000            
+  themirror                            363200000             —                     363000000           
+  theoruzeconstruct                    29000000              —                     41600000            
+  unsecuredfrontierreceiver            49000000              —                     75100000            
+  unsecuredperimetercommsrelay         3000000               —                     18300000            
+
+[SITE_TYPE]  (40 sites differ)
+  Site                                 eve-survival          whdb                  eveuni              
+  -----------------------------------  --------------------  --------------------  --------------------
+  averagefrontierdeposit               Gravimetric           —                     Ore                 
+  barrenperimeterreservoir             Ladar                 —                     Gas                 
+  bountifulfrontierreservoir           Ladar                 —                     Gas                 
+  commonperimeterdeposit               Gravimetric           —                     Ore                 
+  exceptionalcoredeposit               Gravimetric           —                     Ore                 
+  forgottencoreassemblyhall            Magnetometric         —                     Relic               
+  forgottencorecircuitrydisassembler   Magnetometric         —                     Relic               
+  forgottencoredatafield               Magnetometric         —                     Relic               
+  forgottencoreinformationpen          Magnetometric         —                     Relic               
+  forgottenfrontierconversionmodule    Magnetometric         —                     Relic               
+  forgottenfrontierevacuationcenter    Magnetometric         —                     Relic               
+  forgottenfrontierquarantineoutpost   Magnetometric         —                     Relic               
+  forgottenfrontierrecursivedepot      Magnetometric         —                     Relic               
+  forgottenperimetercoronationplatform  Magnetometric         —                     Relic               
+  forgottenperimetergateway            Magnetometric         —                     Relic               
+  forgottenperimeterhabitationcoils    Magnetometric         —                     Relic               
+  forgottenperimeterpowerarray         Magnetometric         —                     Relic               
+  infrequentcoredeposit                Gravimetric           —                     Ore                 
+  instrumentalcorereservoir            Ladar                 —                     Ore                 
+  minorperimeterreservoir              Ladar                 —                     Gas                 
+  ordinaryperimeterreservoir           Ladar                 —                     Gas                 
+  rarifiedcoredeposit                  Gravimetric           —                     Ore                 
+  sizableperimeterreservoir            Ladar                 —                     Gas                 
+  tokenperimeterreservoir              Ladar                 —                     Gas                 
+  unexceptionalfrontierdeposit         Gravimetric           —                     Ore                 
+  unsecuredcorebackuparray             Radar                 —                     Data                
+  unsecuredcoreemergence               Radar                 —                     Data                
+  unsecuredfrontierdatabase            Radar                 —                     Data                
+  unsecuredfrontierdigitalnexus        Radar                 —                     Data                
+  unsecuredfrontierenclaverelay        Radar                 —                     Data                
+  unsecuredfrontierreceiver            Radar                 —                     Data                
+  unsecuredfrontierserverbank          Radar                 —                     Data                
+  unsecuredfrontiertrinaryhub          Radar                 —                     Data                
+  unsecuredperimeteramplifier          Radar                 —                     Data                
+  unsecuredperimetercommsrelay         Radar                 —                     Data                
+  unsecuredperimeterinformationcenter  Radar                 —                     Data                
+  unsecuredperimetertransponderfarm    Radar                 —                     Data                
+  unusualcoredeposit                   Gravimetric           —                     Ore                 
+  vastfrontierreservoir                Ladar                 —                     Gas                 
+  vitalcorereservoir                   Ladar                 —                     Ore                 
+
+[WH_CLASS]  (17 sites differ)
+  Site                                 eve-survival          whdb                  eveuni              
+  -----------------------------------  --------------------  --------------------  --------------------
+  averagefrontierdeposit               CLASSLESS             ORE                   ORE                 
+  barrenperimeterreservoir             CLASSLESS             GAS                   GAS                 
+  bountifulfrontierreservoir           CLASSLESS             GAS                   GAS                 
+  commonperimeterdeposit               CLASSLESS             ORE                   ORE                 
+  exceptionalcoredeposit               CLASSLESS             ORE                   ORE                 
+  infrequentcoredeposit                CLASSLESS             ORE                   ORE                 
+  instrumentalcorereservoir            CLASSLESS             GAS                   GAS                 
+  minorperimeterreservoir              CLASSLESS             GAS                   GAS                 
+  ordinaryperimeterreservoir           CLASSLESS             GAS                   GAS                 
+  rarifiedcoredeposit                  CLASSLESS             ORE                   ORE                 
+  sizableperimeterreservoir            CLASSLESS             —                     GAS                 
+  sizeableperimeterreservoir           —                     GAS                   ICE                 
+  tokenperimeterreservoir              CLASSLESS             GAS                   GAS                 
+  unexceptionalfrontierdeposit         CLASSLESS             ORE                   ORE                 
+  unusualcoredeposit                   CLASSLESS             ORE                   ORE                 
+  vastfrontierreservoir                CLASSLESS             GAS                   GAS                 
+  vitalcorereservoir                   CLASSLESS             GAS                   GAS                 
+
+============================================================
+Summary by field:
+  site_type                 40 sites disagree
+  loot_isk                  20 sites disagree
+  wh_class                  17 sites disagree
+============================================================

@@ -9,5 +9,10 @@ web/node_modules/
 # Build output
 web/dist/
 
+# Environment variables (may contain DB credentials)
+.env
+.env.local
+.env*.local
+
 # Mac
 .DS_Store

@@ -1,0 +1,1220 @@
+[
+  {
+    "id": 1,
+    "display_name": "Perimeter Ambush Point",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/1/",
+    "total_loot_isk": 0,
+    "total_ehp": 300,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Vigilant Sentry Tower",
+      "Awakened Escort",
+      "Emergent Escort",
+      "Emergent Patroller",
+      "Awakened Patroller"
+    ]
+  },
+  {
+    "id": 2,
+    "display_name": "Perimeter Camp",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/2/",
+    "total_loot_isk": 0,
+    "total_ehp": 917,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Vigilant Sentry Tower",
+      "Emergent Watchman",
+      "Emergent Patroller",
+      "Awakened Patroller",
+      "Awakened Watchman"
+    ]
+  },
+  {
+    "id": 3,
+    "display_name": "Phase Catalyst Node",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/3/",
+    "total_loot_isk": 0,
+    "total_ehp": 266,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Vigilant Sentry Tower",
+      "Emergent Watchman",
+      "Emergent Escort",
+      "Awakened Patroller",
+      "Awakened Escort",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 4,
+    "display_name": "The Line",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/4/",
+    "total_loot_isk": 0,
+    "total_ehp": 734,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Watchman",
+      "Emergent Patroller",
+      "Awakened Watchman",
+      "Emergent Escort",
+      "Awakened Patroller"
+    ]
+  },
+  {
+    "id": 5,
+    "display_name": "Forgotten Perimeter Coronation Platform",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/5/",
+    "total_loot_isk": 0,
+    "total_ehp": 19,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Emergent Escort",
+      "Emergent Patroller",
+      "Awakened Watchman"
+    ]
+  },
+  {
+    "id": 6,
+    "display_name": "Forgotten Perimeter Power Array",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/6/",
+    "total_loot_isk": 0,
+    "total_ehp": 834,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Awakened Escort",
+      "Emergent Watchman",
+      "Awakened Watchman"
+    ]
+  },
+  {
+    "id": 7,
+    "display_name": "Unsecured Perimeter Amplifier",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/7/",
+    "total_loot_isk": 0,
+    "total_ehp": 834,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Emergent Watchman",
+      "Awakened Escort",
+      "Awakened Watchman"
+    ]
+  },
+  {
+    "id": 8,
+    "display_name": "Unsecured Perimeter Information Center",
+    "wh_class": "C1",
+    "url": "https://whdb.scan-stakan.space/signatures/8/",
+    "total_loot_isk": 0,
+    "total_ehp": 252,
+    "dps": 188,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Patroller",
+      "Emergent Watchman",
+      "Awakened Patroller",
+      "Awakened Watchman"
+    ]
+  },
+  {
+    "id": 9,
+    "display_name": "Perimeter Checkpoint",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/9/",
+    "total_loot_isk": 0,
+    "total_ehp": 501,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Vigilant Sentry Tower",
+      "Awakened Patroller",
+      "Emergent Patroller",
+      "Awakened Escort",
+      "Sleepless Patroller"
+    ]
+  },
+  {
+    "id": 10,
+    "display_name": "Perimeter Hangar",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/10/",
+    "total_loot_isk": 0,
+    "total_ehp": 120,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Emergent Watchman",
+      "Sleepless Watchman",
+      "Awakened Escort",
+      "Sleepless Escort"
+    ]
+  },
+  {
+    "id": 11,
+    "display_name": "The Ruins of Enclave Cohort 27",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/11/",
+    "total_loot_isk": 0,
+    "total_ehp": 168,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Patroller",
+      "Emergent Patroller",
+      "Awakened Patroller",
+      "Emergent Watchman",
+      "Sleepless Escort"
+    ]
+  },
+  {
+    "id": 12,
+    "display_name": "Sleeper Data Sanctuary",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/12/",
+    "total_loot_isk": 0,
+    "total_ehp": 165,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Vigilant Sentry Tower",
+      "Awakened Escort",
+      "Emergent Patroller",
+      "Sleepless Escort",
+      "Emergent Escort",
+      "Sleepless Outguard"
+    ]
+  },
+  {
+    "id": 13,
+    "display_name": "Forgotten Perimeter Gateway",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/13/",
+    "total_loot_isk": 0,
+    "total_ehp": 37,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Awakened Watchman",
+      "Sleepless Patroller",
+      "Emergent Watchman",
+      "Sleepless Escort",
+      "Sleepless Watchman",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 14,
+    "display_name": "Forgotten Perimeter Habitation Coils",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/14/",
+    "total_loot_isk": 0,
+    "total_ehp": 522,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Emergent Escort",
+      "Emergent Patroller",
+      "Sleepless Patroller",
+      "Sleepless Watchman",
+      "Awakened Escort"
+    ]
+  },
+  {
+    "id": 15,
+    "display_name": "Unsecured Perimeter Comms Relay",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/15/",
+    "total_loot_isk": 0,
+    "total_ehp": 953,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Awakened Watchman",
+      "Sleepless Outguard",
+      "Sleepless Patroller",
+      "Emergent Watchman",
+      "Sleepless Watchman",
+      "Sleepless Escort",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 16,
+    "display_name": "Unsecured Perimeter Transponder Farm",
+    "wh_class": "C2",
+    "url": "https://whdb.scan-stakan.space/signatures/16/",
+    "total_loot_isk": 0,
+    "total_ehp": 354,
+    "dps": 266,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Emergent Patroller",
+      "Emergent Escort",
+      "Awakened Watchman",
+      "Sleepless Patroller",
+      "Awakened Escort"
+    ]
+  },
+  {
+    "id": 17,
+    "display_name": "Fortification Frontier Stronghold",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/17/",
+    "total_loot_isk": 0,
+    "total_ehp": 348,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Emergent Defender",
+      "Awakened Upholder",
+      "Sleepless Upholder",
+      "Awakened Preserver"
+    ]
+  },
+  {
+    "id": 18,
+    "display_name": "Outpost Frontier Stronghold",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/18/",
+    "total_loot_isk": 0,
+    "total_ehp": 633,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Sleepless Defender",
+      "Awakened Defender",
+      "Emergent Defender"
+    ]
+  },
+  {
+    "id": 19,
+    "display_name": "Solar Cell",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/19/",
+    "total_loot_isk": 0,
+    "total_ehp": 519,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Upholder",
+      "Emergent Preserver",
+      "Sleepless Defender",
+      "Awakened Defender",
+      "Emergent Defender",
+      "Emergent Upholder",
+      "Sleepless Preserver"
+    ]
+  },
+  {
+    "id": 20,
+    "display_name": "The Oruze Construct",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/20/",
+    "total_loot_isk": 0,
+    "total_ehp": 934,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Awakened Preserver",
+      "Awakened Upholder",
+      "Sleepless Defender",
+      "Emergent Defender",
+      "Sleepless Upholder"
+    ]
+  },
+  {
+    "id": 21,
+    "display_name": "Forgotten Frontier Quarantine Outpost",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/21/",
+    "total_loot_isk": 0,
+    "total_ehp": 933,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Preserver",
+      "Emergent Defender",
+      "Awakened Upholder",
+      "Awakened Defender",
+      "Sleepless Defender",
+      "Emergent Upholder",
+      "Sleepless Preserver"
+    ]
+  },
+  {
+    "id": 22,
+    "display_name": "Forgotten Frontier Recursive Depot",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/22/",
+    "total_loot_isk": 0,
+    "total_ehp": 235,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Preserver",
+      "Awakened Defender",
+      "Awakened Upholder",
+      "Emergent Defender",
+      "Sleepless Upholder"
+    ]
+  },
+  {
+    "id": 23,
+    "display_name": "Unsecured Frontier Database",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/23/",
+    "total_loot_isk": 0,
+    "total_ehp": 231,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Emergent Preserver",
+      "Awakened Upholder",
+      "Sleepless Upholder",
+      "Emergent Defender"
+    ]
+  },
+  {
+    "id": 24,
+    "display_name": "Unsecured Frontier Receiver",
+    "wh_class": "C3",
+    "url": "https://whdb.scan-stakan.space/signatures/24/",
+    "total_loot_isk": 0,
+    "total_ehp": 183,
+    "dps": 660,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Defender",
+      "Awakened Preserver",
+      "Awakened Defender",
+      "Awakened Upholder",
+      "Emergent Upholder",
+      "Sleepless Defender",
+      "Sleepless Preserver"
+    ]
+  },
+  {
+    "id": 25,
+    "display_name": "Frontier Barracks",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/25/",
+    "total_loot_isk": 0,
+    "total_ehp": 461,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Upholder",
+      "Sleepless Preserver",
+      "Awakened Preserver",
+      "Emergent Preserver"
+    ]
+  },
+  {
+    "id": 26,
+    "display_name": "Frontier Command Post",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/26/",
+    "total_loot_isk": 0,
+    "total_ehp": 980,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Emergent Defender",
+      "Emergent Preserver",
+      "Emergent Upholder",
+      "Awakened Defender",
+      "Sleepless Defender",
+      "Sleepless Preserver",
+      "Awakened Preserver"
+    ]
+  },
+  {
+    "id": 27,
+    "display_name": "Integrated Terminus",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/27/",
+    "total_loot_isk": 0,
+    "total_ehp": 908,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Awakened Defender",
+      "Emergent Upholder",
+      "Awakened Preserver",
+      "Awakened Upholder",
+      "Emergent Preserver",
+      "Emergent Defender",
+      "Sleepless Safeguard"
+    ]
+  },
+  {
+    "id": 28,
+    "display_name": "Sleeper Information Sanctum",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/28/",
+    "total_loot_isk": 0,
+    "total_ehp": 842,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Upholder",
+      "Sleepless Preserver",
+      "Emergent Upholder",
+      "Sleepless Defender",
+      "Sleepless Safeguard",
+      "Awakened Preserver",
+      "Emergent Preserver"
+    ]
+  },
+  {
+    "id": 29,
+    "display_name": "Forgotten Frontier Conversion Module",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/29/",
+    "total_loot_isk": 0,
+    "total_ehp": 402,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Emergent Defender",
+      "Awakened Defender",
+      "Sleepless Upholder",
+      "Sleepless Defender",
+      "Sleepless Safeguard"
+    ]
+  },
+  {
+    "id": 30,
+    "display_name": "Forgotten Frontier Evacuation Center",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/30/",
+    "total_loot_isk": 0,
+    "total_ehp": 467,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Defender",
+      "Sleepless Preserver",
+      "Awakened Defender",
+      "Sleepless Defender"
+    ]
+  },
+  {
+    "id": 31,
+    "display_name": "Unsecured Frontier Digital Nexus",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/31/",
+    "total_loot_isk": 0,
+    "total_ehp": 882,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Defender",
+      "Awakened Defender",
+      "Emergent Preserver",
+      "Sleepless Defender",
+      "Sleepless Safeguard"
+    ]
+  },
+  {
+    "id": 32,
+    "display_name": "Unsecured Frontier Trinary Hub",
+    "wh_class": "C4",
+    "url": "https://whdb.scan-stakan.space/signatures/32/",
+    "total_loot_isk": 0,
+    "total_ehp": 467,
+    "dps": 1442,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Defender",
+      "Sleepless Preserver",
+      "Awakened Defender",
+      "Sleepless Defender"
+    ]
+  },
+  {
+    "id": 33,
+    "display_name": "Core Garrison",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/33/",
+    "total_loot_isk": 0,
+    "total_ehp": 855,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Restless Sentry Tower",
+      "Emergent Sentinel",
+      "Awakened Sentinel",
+      "Emergent Keeper",
+      "Sleepless Sentinel",
+      "Awakened Keeper",
+      "Emergent Warden",
+      "Sleepless Keeper",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 34,
+    "display_name": "Core Stronghold",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/34/",
+    "total_loot_isk": 0,
+    "total_ehp": 508,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Restless Sentry Tower",
+      "Emergent Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Warden",
+      "Emergent Warden",
+      "Awakened Sentinel",
+      "Awakened Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 35,
+    "display_name": "Oruze Osobnyk",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/35/",
+    "total_loot_isk": 0,
+    "total_ehp": 492,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Awakened Sentinel",
+      "Sleepless Guardian",
+      "Emergent Keeper",
+      "Emergent Warden",
+      "Awakened Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 36,
+    "display_name": "Quarantine Area",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/36/",
+    "total_loot_isk": 0,
+    "total_ehp": 0,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Restless Sentry Tower",
+      "Emergent Escort",
+      "Awakened Keeper",
+      "Sleepless Sentinel",
+      "Awakened Sentinel",
+      "Emergent Sentinel",
+      "Awakened Warden",
+      "Sleepless Keeper",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 37,
+    "display_name": "Forgotten Core Data Field",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/37/",
+    "total_loot_isk": 0,
+    "total_ehp": 704,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Sentinel",
+      "Awakened Keeper",
+      "Emergent Keeper",
+      "Emergent Warden",
+      "Awakened Sentinel",
+      "Awakened Warden",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Sleepless Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 38,
+    "display_name": "Forgotten Core Information Pen",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/38/",
+    "total_loot_isk": 0,
+    "total_ehp": 87,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Keeper",
+      "Emergent Keeper",
+      "Awakened Warden",
+      "Emergent Warden",
+      "Awakened Sentinel",
+      "Awakened Keeper",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 39,
+    "display_name": "Unsecured Frontier Enclave Relay",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/39/",
+    "total_loot_isk": 0,
+    "total_ehp": 343,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Emergent Keeper",
+      "Awakened Warden",
+      "Emergent Warden",
+      "Awakened Sentinel",
+      "Sleepless Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 40,
+    "display_name": "Unsecured Frontier Server Bank",
+    "wh_class": "C5",
+    "url": "https://whdb.scan-stakan.space/signatures/40/",
+    "total_loot_isk": 0,
+    "total_ehp": 100,
+    "dps": 1758,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Sentinel",
+      "Awakened Keeper",
+      "Emergent Keeper",
+      "Emergent Warden",
+      "Awakened Sentinel",
+      "Awakened Warden",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Sleepless Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 41,
+    "display_name": "Core Citadel",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/41/",
+    "total_loot_isk": 0,
+    "total_ehp": 955,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Sleepless Warden",
+      "Emergent Keeper",
+      "Sleepless Guardian",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 42,
+    "display_name": "Core Bastion",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/42/",
+    "total_loot_isk": 0,
+    "total_ehp": 692,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Restless Sentry Tower",
+      "Emergent Keeper",
+      "Emergent Sentinel",
+      "Awakened Keeper",
+      "Awakened Sentinel",
+      "Awakened Warden",
+      "Sleepless Sentinel",
+      "Sleepless Keeper",
+      "Emergent Warden",
+      "Sleepless Guardian",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 43,
+    "display_name": "Strange Energy Readings",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/43/",
+    "total_loot_isk": 0,
+    "total_ehp": 620,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Keeper",
+      "Awakened Warden",
+      "Sleepless Keeper",
+      "Awakened Keeper",
+      "Sleepless Guardian",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 44,
+    "display_name": "The Mirror",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/44/",
+    "total_loot_isk": 0,
+    "total_ehp": 956,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Restless Sentry Tower",
+      "Emergent Warden",
+      "Awakened Warden",
+      "Sleepless Sentinel",
+      "Sleepless Warden",
+      "Emergent Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Guardian",
+      "Emergent Keeper",
+      "Awakened Keeper",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 45,
+    "display_name": "Forgotten Core Assembly Hall",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/45/",
+    "total_loot_isk": 0,
+    "total_ehp": 710,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Restless Sentry Tower",
+      "Emergent Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Sleepless Warden",
+      "Sleepless Guardian",
+      "Awakened Keeper",
+      "Awakened Warden",
+      "Awakened Sentinel",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 46,
+    "display_name": "Forgotten Core Circuitry Disassembler",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/46/",
+    "total_loot_isk": 0,
+    "total_ehp": 615,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Restless Sentry Tower",
+      "Emergent Sentinel",
+      "Emergent Keeper",
+      "Emergent Warden",
+      "Sleepless Guardian",
+      "Awakened Sentinel",
+      "Awakened Keeper",
+      "Awakened Warden",
+      "Sleepless Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 47,
+    "display_name": "Unsecured Core Backup Array",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/47/",
+    "total_loot_isk": 0,
+    "total_ehp": 793,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Restless Sentry Tower",
+      "Emergent Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Sentinel",
+      "Sleepless Warden",
+      "Sleepless Guardian",
+      "Awakened Warden",
+      "Awakened Sentinel",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 48,
+    "display_name": "Unsecured Core Emergence",
+    "wh_class": "C6",
+    "url": "https://whdb.scan-stakan.space/signatures/48/",
+    "total_loot_isk": 0,
+    "total_ehp": 184,
+    "dps": 2826,
+    "npcs": [
+      "SLEEPERS",
+      "Wakeful Sentry Tower",
+      "Restless Sentry Tower",
+      "Emergent Sentinel",
+      "Emergent Keeper",
+      "Emergent Warden",
+      "Sleepless Guardian",
+      "Emergent Watchman",
+      "Awakened Sentinel",
+      "Awakened Keeper",
+      "Awakened Warden",
+      "Sleepless Sentinel",
+      "Sleepless Keeper",
+      "Sleepless Warden",
+      "Upgraded Avenger"
+    ]
+  },
+  {
+    "id": 49,
+    "display_name": "Average Frontier Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/49/",
+    "total_loot_isk": 0,
+    "total_ehp": 167,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 50,
+    "display_name": "Common Perimeter Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/50/",
+    "total_loot_isk": 0,
+    "total_ehp": 0,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 51,
+    "display_name": "Exceptional Core Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/51/",
+    "total_loot_isk": 0,
+    "total_ehp": 714,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Sentinel"
+    ]
+  },
+  {
+    "id": 52,
+    "display_name": "Infrequent Core Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/52/",
+    "total_loot_isk": 0,
+    "total_ehp": 666,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender"
+    ]
+  },
+  {
+    "id": 53,
+    "display_name": "Isolated Core Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/53/",
+    "total_loot_isk": 0,
+    "total_ehp": 750,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Watchman",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 54,
+    "display_name": "Ordinary Perimeter Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/54/",
+    "total_loot_isk": 0,
+    "total_ehp": 0,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Patroller"
+    ]
+  },
+  {
+    "id": 55,
+    "display_name": "Rarified Core Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/55/",
+    "total_loot_isk": 0,
+    "total_ehp": 48,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Sentinel",
+      "Awakened Sentinel"
+    ]
+  },
+  {
+    "id": 56,
+    "display_name": "Unusual Core Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/56/",
+    "total_loot_isk": 0,
+    "total_ehp": 334,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller"
+    ]
+  },
+  {
+    "id": 57,
+    "display_name": "Uncommon Core Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/57/",
+    "total_loot_isk": 0,
+    "total_ehp": 0,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Watchman"
+    ]
+  },
+  {
+    "id": 58,
+    "display_name": "Unexceptional Frontier Deposit",
+    "wh_class": "Ore",
+    "url": "https://whdb.scan-stakan.space/signatures/58/",
+    "total_loot_isk": 0,
+    "total_ehp": 300,
+    "dps": 94,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Escort",
+      "Emergent Patroller",
+      "Emergent Watchman"
+    ]
+  },
+  {
+    "id": 59,
+    "display_name": "Barren Perimeter Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/59/",
+    "total_loot_isk": 0,
+    "total_ehp": 0,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Patroller",
+      "Emergent Watchman"
+    ]
+  },
+  {
+    "id": 60,
+    "display_name": "Bountiful Frontier Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/60/",
+    "total_loot_isk": 0,
+    "total_ehp": 932,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Defender",
+      "Awakened Defender"
+    ]
+  },
+  {
+    "id": 61,
+    "display_name": "Instrumental Core Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/61/",
+    "total_loot_isk": 0,
+    "total_ehp": 856,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Sleepless Sentinel"
+    ]
+  },
+  {
+    "id": 62,
+    "display_name": "Minor Perimeter Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/62/",
+    "total_loot_isk": 0,
+    "total_ehp": 668,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Patroller"
+    ]
+  },
+  {
+    "id": 63,
+    "display_name": "Ordinary Perimeter Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/63/",
+    "total_loot_isk": 0,
+    "total_ehp": 165,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Vigilant Sentry Tower"
+    ]
+  },
+  {
+    "id": 64,
+    "display_name": "Sizeable Perimeter Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/64/",
+    "total_loot_isk": 0,
+    "total_ehp": 0,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Patroller",
+      "Emergent Watchman"
+    ]
+  },
+  {
+    "id": 65,
+    "display_name": "Token Perimeter Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/65/",
+    "total_loot_isk": 0,
+    "total_ehp": 700,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Escort",
+      "Awakened Watchman"
+    ]
+  },
+  {
+    "id": 66,
+    "display_name": "Vast Frontier Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/66/",
+    "total_loot_isk": 0,
+    "total_ehp": 332,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Awakened Upholder"
+    ]
+  },
+  {
+    "id": 67,
+    "display_name": "Vital Core Reservoir",
+    "wh_class": "Gas",
+    "url": "https://whdb.scan-stakan.space/signatures/67/",
+    "total_loot_isk": 0,
+    "total_ehp": 836,
+    "dps": 164,
+    "npcs": [
+      "SLEEPERS",
+      "Emergent Keeper",
+      "Sleepless Keeper"
+    ]
+  },
+  {
+    "id": 77,
+    "display_name": "Epicenter",
+    "wh_class": "Thera",
+    "url": "https://whdb.scan-stakan.space/signatures/77/",
+    "total_loot_isk": 0,
+    "total_ehp": 233,
+    "dps": 104,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Emergent Defender"
+    ]
+  },
+  {
+    "id": 78,
+    "display_name": "Expedition Command Outpost Wreck",
+    "wh_class": "Thera",
+    "url": "https://whdb.scan-stakan.space/signatures/78/",
+    "total_loot_isk": 0,
+    "total_ehp": 233,
+    "dps": 104,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Emergent Defender"
+    ]
+  },
+  {
+    "id": 79,
+    "display_name": "Planetary Colonization Office Wreck",
+    "wh_class": "Thera",
+    "url": "https://whdb.scan-stakan.space/signatures/79/",
+    "total_loot_isk": 0,
+    "total_ehp": 233,
+    "dps": 104,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Emergent Defender"
+    ]
+  },
+  {
+    "id": 80,
+    "display_name": "Testing Facilities",
+    "wh_class": "Thera",
+    "url": "https://whdb.scan-stakan.space/signatures/80/",
+    "total_loot_isk": 0,
+    "total_ehp": 233,
+    "dps": 104,
+    "npcs": [
+      "SLEEPERS",
+      "Awakened Defender",
+      "Emergent Defender"
+    ]
+  }
+]

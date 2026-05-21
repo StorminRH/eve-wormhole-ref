@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16
+    container_name: wormhole_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: wormholes
+      POSTGRES_USER: wh_user
+      POSTGRES_PASSWORD: wh_pass
+    ports:
+      # Maps port 5432 inside the container to 5432 on your Mac,
+      # so local tools (TablePlus, psql, your migration script) can connect.
+      - "5432:5432"
+    volumes:
+      # Named volume — PostgreSQL stores data here so it survives container restarts.
+      - wormhole_data:/var/lib/postgresql/data
+
+volumes:
+  wormhole_data:
