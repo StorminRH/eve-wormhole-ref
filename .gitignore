@@ -1,0 +1,13 @@
+# Python
+scraper/venv/
+__pycache__/
+*.pyc
+
+# Node
+web/node_modules/
+
+# Build output
+web/dist/
+
+# Mac
+.DS_Store

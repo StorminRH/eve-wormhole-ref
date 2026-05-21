@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Demo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+
+    h2 { color: #8b949e; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 20px; }
+
+    /* ── Card shell ── */
+    .site-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      max-width: 480px;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .site-card:hover { border-color: #58a6ff44; }
+
+    /* ── Summary row (always visible) ── */
+    .card-summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .card-summary:hover { background: #1c2128; }
+
+    .summary-left { flex: 1; min-width: 0; }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e6edf3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .type-tag {
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: 4px;
+      background: #21262d;
+      color: #8b949e;
+      border: 1px solid #30363d;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 1px 8px;
+      border-radius: 12px;
+    }
+    .badge-C1 { background: #1a3a2a; color: #3fb950; border: 1px solid #3fb950; }
+
+    .summary-stats {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      flex-shrink: 0;
+    }
+    .stat-loot { font-size: 13px; color: #3fb950; font-weight: 600; }
+    .stat-damage { font-size: 11px; color: #8b949e; }
+
+    .chevron {
+      color: #8b949e;
+      font-size: 12px;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    .site-card.open .chevron { transform: rotate(180deg); }
+
+    /* ── Divider between summary and detail ── */
+    .card-divider {
+      height: 1px;
+      background: #30363d;
+      display: none;
+    }
+    .site-card.open .card-divider { display: block; }
+
+    /* ── Detail panel ── */
+    .card-detail {
+      display: none;
+      padding: 14px 16px;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .site-card.open .card-detail { display: flex; }
+
+    /* ── Meta row (damage, webbers etc.) ── */
+    .meta-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4px 10px;
+      font-size: 13px;
+    }
+    .meta-key { color: #8b949e; white-space: nowrap; }
+    .meta-val { color: #c9d1d9; }
+    .meta-val.danger { color: #f85149; }
+    .meta-val.warn   { color: #d29922; }
+
+    /* ── Waves ── */
+    .wave-section { display: flex; flex-direction: column; gap: 6px; }
+
+    .wave-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .wave-name { font-size: 12px; font-weight: 700; color: #8b949e; text-transform: uppercase; letter-spacing: 0.4px; }
+    .wave-dps  { font-size: 12px; color: #8b949e; }
+    .wave-dps span { color: #f85149; font-weight: 600; }
+
+    /* ── NPC rows ── */
+    .npc-list { display: flex; flex-direction: column; gap: 4px; }
+
+    .npc-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      padding: 4px 8px;
+      border-radius: 5px;
+      background: #0d1117;
+    }
+
+    .npc-count { color: #8b949e; min-width: 22px; text-align: right; flex-shrink: 0; }
+    .npc-type  { color: #8b949e; font-size: 11px; flex-shrink: 0; }
+    .npc-name  { color: #c9d1d9; flex: 1; }
+
+    .tags { display: flex; gap: 4px; flex-wrap: wrap; flex-shrink: 0; }
+
+    /* Ewar tags */
+    .tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .tag-web     { background: #1a2f3a; color: #58a6ff; border: 1px solid #58a6ff66; }
+    .tag-scram   { background: #3a1a1a; color: #f85149; border: 1px solid #f8514966; }
+    .tag-nos     { background: #2d2a1a; color: #d29922; border: 1px solid #d2992266; }
+    .tag-trigger { background: #2d2a1a; color: #d29922; border: 1px solid #d2992266; }
+
+    /* ── Separator between waves ── */
+    .wave-sep { height: 1px; background: #21262d; }
+
+    /* ── Recommended ships ── */
+    .rec-ships {
+      font-size: 12px;
+      color: #8b949e;
+      padding-top: 4px;
+      border-top: 1px solid #21262d;
+    }
+    .rec-ships span { color: #c9d1d9; }
+  </style>
+</head>
+<body>
+
+  <h2>Card layout demo — Perimeter Ambush Point</h2>
+
+  <div class="site-card" id="card">
+
+    <!-- Always-visible summary -->
+    <div class="card-summary" onclick="toggleCard()">
+      <div class="summary-left">
+        <div class="card-title">Perimeter Ambush Point</div>
+        <div class="card-subtitle">
+          <span class="type-tag">Cosmic Anomaly</span>
+          <span class="badge badge-C1">C1</span>
+        </div>
+      </div>
+      <div class="summary-stats">
+        <span class="stat-loot">8.6M</span>
+      </div>
+      <span class="chevron">▼</span>
+    </div>
+
+    <div class="card-divider"></div>
+
+    <!-- Expanded detail -->
+    <div class="card-detail">
+
+      <!-- Top meta -->
+      <div class="meta-grid">
+        <span class="meta-key">Webbers</span>  <span class="meta-val danger">Emergent Escort</span>
+        <span class="meta-key">Scramblers</span><span class="meta-val">None</span>
+        <span class="meta-key">Extras</span>   <span class="meta-val warn">NOS (Awakened Escort)</span>
+      </div>
+
+      <!-- Wave 1 -->
+      <div class="wave-section">
+        <div class="wave-header">
+          <span class="wave-name">Initial Group</span>
+          <span class="wave-dps">DPS <span>180</span></span>
+        </div>
+        <div class="npc-list">
+          <div class="npc-row">
+            <span class="npc-count">2x</span>
+            <span class="npc-type">Sentry</span>
+            <span class="npc-name">Sirius</span>
+            <span class="tags"></span>
+          </div>
+          <div class="npc-row">
+            <span class="npc-count">1x</span>
+            <span class="npc-type">Cruiser</span>
+            <span class="npc-name">Awakened Escort</span>
+            <span class="tags">
+              <span class="tag tag-trigger">Trigger</span>
+            </span>
+          </div>
+          <div class="npc-row">
+            <span class="npc-count">1x</span>
+            <span class="npc-type">Frigate</span>
+            <span class="npc-name">Emergent Escort</span>
+            <span class="tags">
+              <span class="tag tag-web">Web</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-sep"></div>
+
+      <!-- Wave 2 -->
+      <div class="wave-section">
+        <div class="wave-header">
+          <span class="wave-name">Reinforcements Wave 1</span>
+          <span class="wave-dps">DPS <span>157</span></span>
+        </div>
+        <div class="npc-list">
+          <div class="npc-row">
+            <span class="npc-count">2x</span>
+            <span class="npc-type">Cruiser</span>
+            <span class="npc-name">Awakened Escort</span>
+            <span class="tags">
+              <span class="tag tag-trigger">Trigger</span>
+            </span>
+          </div>
+          <div class="npc-row">
+            <span class="npc-count">3x</span>
+            <span class="npc-type">Frigate</span>
+            <span class="npc-name">Emergent Patroller</span>
+            <span class="tags"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-sep"></div>
+
+      <!-- Wave 3 -->
+      <div class="wave-section">
+        <div class="wave-header">
+          <span class="wave-name">Reinforcements Wave 2</span>
+          <span class="wave-dps">DPS <span>188</span></span>
+        </div>
+        <div class="npc-list">
+          <div class="npc-row">
+            <span class="npc-count">2x</span>
+            <span class="npc-type">Cruiser</span>
+            <span class="npc-name">Awakened Patroller</span>
+            <span class="tags"></span>
+          </div>
+          <div class="npc-row">
+            <span class="npc-count">2x</span>
+            <span class="npc-type">Cruiser</span>
+            <span class="npc-name">Awakened Escort</span>
+            <span class="tags"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleCard() {
+      document.getElementById('card').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

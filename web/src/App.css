@@ -1,0 +1,161 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ── Header ── */
+.header { margin-bottom: 32px; }
+.header h1 { font-size: 28px; color: #58a6ff; letter-spacing: -0.5px; }
+.header p  { color: #8b949e; margin-top: 4px; }
+
+/* ── Filters ── */
+.filters { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+
+.filter-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+.filter-label {
+  font-size: 12px; font-weight: 600; color: #8b949e;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  width: 60px; flex-shrink: 0;
+}
+
+.filter-btn {
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #30363d;
+  background: transparent;
+  color: #8b949e;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-btn:hover  { border-color: #58a6ff; color: #58a6ff; }
+.filter-btn.active { background: #58a6ff; border-color: #58a6ff; color: #0d1117; font-weight: 600; }
+
+.results-count { font-size: 13px; color: #8b949e; margin-bottom: 16px; }
+
+/* ── Grid ── */
+.site-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+/* ── Card shell ── */
+.site-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+.site-card:hover       { border-color: #58a6ff44; }
+.site-card.open        { border-color: #58a6ff66; }
+
+/* ── Summary row ── */
+.card-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+.card-summary:hover { background: #1c2128; }
+
+.summary-left { flex: 1; min-width: 0; }
+
+.card-title {
+  font-size: 15px; font-weight: 600; color: #e6edf3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.card-subtitle {
+  display: flex; align-items: center; gap: 6px;
+  margin-top: 4px; flex-wrap: wrap;
+}
+
+.type-tag {
+  font-size: 11px; padding: 1px 7px; border-radius: 4px;
+  background: #21262d; color: #8b949e; border: 1px solid #30363d;
+}
+
+.badge {
+  font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 12px;
+}
+.badge-C1       { background: #1a3a2a; color: #3fb950; border: 1px solid #3fb950; }
+.badge-C2       { background: #1a2f3a; color: #58a6ff; border: 1px solid #58a6ff; }
+.badge-C3       { background: #2d2a1a; color: #d29922; border: 1px solid #d29922; }
+.badge-C4       { background: #2d1a1a; color: #f85149; border: 1px solid #f85149; }
+.badge-C5       { background: #2a1a2d; color: #bc8cff; border: 1px solid #bc8cff; }
+.badge-C6       { background: #3a1a1a; color: #ff7b72; border: 1px solid #ff7b72; }
+.badge-Classless{ background: #1e2030; color: #8b949e; border: 1px solid #8b949e; }
+
+.summary-stats { display: flex; flex-direction: column; align-items: flex-end; flex-shrink: 0; }
+.stat-loot     { font-size: 13px; color: #3fb950; font-weight: 600; }
+
+.chevron { color: #8b949e; font-size: 12px; transition: transform 0.2s; flex-shrink: 0; }
+.site-card.open .chevron { transform: rotate(180deg); }
+
+/* ── Divider ── */
+.card-divider { height: 1px; background: #30363d; }
+
+/* ── Detail panel ── */
+.card-detail {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Meta grid ── */
+.meta-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  font-size: 13px;
+}
+.meta-key { color: #8b949e; white-space: nowrap; }
+.meta-val { color: #c9d1d9; }
+.meta-val.danger { color: #f85149; }
+.meta-val.warn   { color: #d29922; }
+
+/* ── Waves ── */
+.wave-section { display: flex; flex-direction: column; gap: 6px; }
+
+.wave-header {
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 8px;
+}
+.wave-name {
+  font-size: 12px; font-weight: 700; color: #8b949e;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+.wave-dps { font-size: 12px; color: #8b949e; }
+.wave-dps span { color: #f85149; font-weight: 600; }
+
+/* ── NPC rows ── */
+.npc-list { display: flex; flex-direction: column; gap: 4px; }
+
+.npc-row {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; padding: 4px 8px;
+  border-radius: 5px; background: #0d1117;
+}
+.npc-count { color: #8b949e; min-width: 22px; text-align: right; flex-shrink: 0; }
+.npc-type  { color: #8b949e; font-size: 11px; flex-shrink: 0; }
+.npc-name  { color: #c9d1d9; flex: 1; }
+.tags      { display: flex; gap: 4px; flex-wrap: wrap; flex-shrink: 0; }
+
+.tag {
+  font-size: 10px; font-weight: 700; padding: 1px 5px;
+  border-radius: 3px; text-transform: uppercase; letter-spacing: 0.3px;
+}
+.tag-trigger { background: #2d2a1a; color: #d29922; border: 1px solid #d2992266; }
+.tag-web     { background: #1a2f3a; color: #58a6ff; border: 1px solid #58a6ff66; }
+.tag-scram   { background: #3a1a1a; color: #f85149; border: 1px solid #f8514966; }
+.tag-nos     { background: #2d2a1a; color: #d29922; border: 1px solid #d2992266; }
+
+.wave-sep { height: 1px; background: #21262d; }
