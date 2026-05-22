@@ -1,6 +1,12 @@
 import { useState } from 'react'
 
-const TAG_LABELS = { web: 'Web', scram: 'Scram', nos: 'NOS' }
+const TAG_LABELS = {
+  web:   'Web',
+  scram: 'Scram',
+  nos:   'NOS',
+  rep:   'Reps',
+  reps:  'Reps',
+}
 
 function formatISK(isk) {
   if (!isk) return null
@@ -9,15 +15,50 @@ function formatISK(isk) {
   return `${isk.toLocaleString()} ISK`
 }
 
+function formatEHP(ehp) {
+  if (!ehp) return null
+  if (ehp >= 1_000_000) return `${(ehp / 1_000_000).toFixed(1)}M EHP`
+  if (ehp >= 1_000)     return `${Math.round(ehp / 1000)}k EHP`
+  return `${ehp} EHP`
+}
+
+function EwarRow({ waves, webbers, scramblers }) {
+  // Collect ewar types: site-level text fields + per-NPC tags
+  const tags = new Set()
+
+  if (webbers   && webbers   !== 'None') tags.add('web')
+  if (scramblers && scramblers !== 'None') tags.add('scram')
+
+  for (const wave of waves) {
+    for (const npc of wave.npcs ?? []) {
+      for (const t of npc.tags ?? []) tags.add(t)
+    }
+  }
+
+  if (tags.size === 0) return null
+
+  return (
+    <div className="ewar-row">
+      <span className="ewar-label">EWAR</span>
+      {[...tags].map(tag => (
+        <span key={tag} className={`tag tag-${tag}`}>
+          {TAG_LABELS[tag] ?? tag}
+        </span>
+      ))}
+    </div>
+  )
+}
+
 function NpcRow({ npc }) {
+  const ehp = formatEHP(npc.ehp)
   return (
     <div className="npc-row">
       <span className="npc-count">{npc.count}x</span>
-      <span className="npc-type">{npc.ship_type}</span>
       <span className="npc-name">{npc.name}</span>
+      {ehp && <span className="npc-ehp">{ehp}</span>}
       <span className="tags">
         {npc.trigger && <span className="tag tag-trigger">Trigger</span>}
-        {npc.tags.map(tag => (
+        {(npc.tags ?? []).map(tag => (
           <span key={tag} className={`tag tag-${tag}`}>
             {TAG_LABELS[tag] ?? tag}
           </span>
@@ -27,17 +68,18 @@ function NpcRow({ npc }) {
   )
 }
 
-function WaveSection({ pocket, isLast }) {
-  const dps = pocket.max_dps ?? pocket.initial_dps
+function WaveSection({ wave, isLast }) {
   return (
     <>
       <div className="wave-section">
         <div className="wave-header">
-          <span className="wave-name">{pocket.name}</span>
-          {dps && <span className="wave-dps">DPS <span>{dps}</span></span>}
+          <span className="wave-name">{wave.name}</span>
+          {wave.dps > 0 && (
+            <span className="wave-dps">DPS <span>{wave.dps}</span></span>
+          )}
         </div>
         <div className="npc-list">
-          {pocket.npcs.map((npc, i) => (
+          {(wave.npcs ?? []).map((npc, i) => (
             <NpcRow key={i} npc={npc} />
           ))}
         </div>
@@ -50,18 +92,7 @@ function WaveSection({ pocket, isLast }) {
 function SiteCard({ site }) {
   const [open, setOpen] = useState(false)
 
-  // Only show meta rows that have meaningful values
-  const metaRows = [
-    { label: 'Webbers',    value: site.webbers,    className: site.webbers    && site.webbers    !== 'None' ? 'danger' : '' },
-    { label: 'Scramblers', value: site.scramblers, className: site.scramblers && site.scramblers !== 'None' ? 'danger' : '' },
-    { label: 'Ships',      value: site.recommended_ships, className: '' },
-  ].filter(r => r.value)
-
-  // waves is stored as JSONB in the DB — it holds the eve-survival pocket structure
-  const pockets = Array.isArray(site.waves) && typeof site.waves[0] === 'object'
-    ? site.waves
-    : []
-
+  const waves      = Array.isArray(site.waves) ? site.waves : []
   const lootDisplay = formatISK(site.loot_isk)
 
   return (
@@ -71,15 +102,13 @@ function SiteCard({ site }) {
         <div className="summary-left">
           <div className="card-title">{site.display_name}</div>
           <div className="card-subtitle">
-            <span className="type-tag">{site.site_type}</span>
-            <span className={`badge badge-${site.wh_class}`}>{site.wh_class}</span>
+            {site.site_type && <span className="type-tag">{site.site_type}</span>}
+            {site.wh_class  && (
+              <span className={`badge badge-${site.wh_class}`}>{site.wh_class}</span>
+            )}
           </div>
         </div>
-        {lootDisplay && (
-          <div className="summary-stats">
-            <span className="stat-loot">{lootDisplay}</span>
-          </div>
-        )}
+        {lootDisplay && <span className="stat-loot">{lootDisplay}</span>}
         <span className="chevron">▼</span>
       </div>
 
@@ -88,24 +117,22 @@ function SiteCard({ site }) {
           <div className="card-divider" />
           <div className="card-detail">
 
-            {metaRows.length > 0 && (
-              <div className="meta-grid">
-                {metaRows.map(({ label, value, className }) => (
-                  <>
-                    <span key={label + '-k'} className="meta-key">{label}</span>
-                    <span key={label + '-v'} className={`meta-val ${className}`}>{value}</span>
-                  </>
-                ))}
-              </div>
-            )}
+            <EwarRow
+              waves={waves}
+              webbers={site.webbers}
+              scramblers={site.scramblers}
+            />
 
-            {pockets.map((pocket, i) => (
-              <WaveSection
-                key={pocket.name}
-                pocket={pocket}
-                isLast={i === pockets.length - 1}
-              />
-            ))}
+            {waves.length > 0
+              ? waves.map((wave, i) => (
+                  <WaveSection
+                    key={i}
+                    wave={wave}
+                    isLast={i === waves.length - 1}
+                  />
+                ))
+              : <p className="no-data">No wave data available.</p>
+            }
 
           </div>
         </>

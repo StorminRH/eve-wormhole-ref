@@ -92,9 +92,13 @@
 .badge-C5       { background: #2a1a2d; color: #bc8cff; border: 1px solid #bc8cff; }
 .badge-C6       { background: #3a1a1a; color: #ff7b72; border: 1px solid #ff7b72; }
 .badge-Classless{ background: #1e2030; color: #8b949e; border: 1px solid #8b949e; }
+.badge-ORE      { background: #2d1f0a; color: #e3b341; border: 1px solid #e3b341; }
+.badge-GAS      { background: #0d2a1a; color: #3fb950; border: 1px solid #3fb950; }
+.badge-ICE      { background: #0d1f2d; color: #79c0ff; border: 1px solid #79c0ff; }
+.badge-THERA    { background: #2a1a2d; color: #d2a8ff; border: 1px solid #d2a8ff; }
 
 .summary-stats { display: flex; flex-direction: column; align-items: flex-end; flex-shrink: 0; }
-.stat-loot     { font-size: 13px; color: #3fb950; font-weight: 600; }
+.stat-loot     { font-size: 13px; color: #58a6ff; font-weight: 600; flex-shrink: 0; }
 
 .chevron { color: #8b949e; font-size: 12px; transition: transform 0.2s; flex-shrink: 0; }
 .site-card.open .chevron { transform: rotate(180deg); }
@@ -107,20 +111,24 @@
   padding: 14px 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
-/* ── Meta grid ── */
-.meta-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px 10px;
-  font-size: 13px;
+/* ── Ewar row ── */
+.ewar-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
 }
-.meta-key { color: #8b949e; white-space: nowrap; }
-.meta-val { color: #c9d1d9; }
-.meta-val.danger { color: #f85149; }
-.meta-val.warn   { color: #d29922; }
+.ewar-label {
+  font-size: 10px; font-weight: 700; color: #8b949e;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  margin-right: 2px;
+}
+
+/* ── No data fallback ── */
+.no-data { font-size: 13px; color: #8b949e; font-style: italic; margin: 0; }
 
 /* ── Waves ── */
 .wave-section { display: flex; flex-direction: column; gap: 6px; }
@@ -145,8 +153,8 @@
   border-radius: 5px; background: #0d1117;
 }
 .npc-count { color: #8b949e; min-width: 22px; text-align: right; flex-shrink: 0; }
-.npc-type  { color: #8b949e; font-size: 11px; flex-shrink: 0; }
 .npc-name  { color: #c9d1d9; flex: 1; }
+.npc-ehp   { font-size: 11px; color: #8b949e; flex-shrink: 0; white-space: nowrap; }
 .tags      { display: flex; gap: 4px; flex-wrap: wrap; flex-shrink: 0; }
 
 .tag {
@@ -157,5 +165,6 @@
 .tag-web     { background: #1a2f3a; color: #58a6ff; border: 1px solid #58a6ff66; }
 .tag-scram   { background: #3a1a1a; color: #f85149; border: 1px solid #f8514966; }
 .tag-nos     { background: #2d2a1a; color: #d29922; border: 1px solid #d2992266; }
+.tag-rep, .tag-reps { background: #1a2f1a; color: #3fb950; border: 1px solid #3fb95066; }
 
 .wave-sep { height: 1px; background: #21262d; }
