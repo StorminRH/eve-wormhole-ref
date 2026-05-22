@@ -1,7 +1,4 @@
 {
-  "buildCommand": "cd web && npm install && npm run build",
-  "outputDirectory": "web/dist",
-  "devCommand": "cd web && npm run dev -- --port 3000",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
