@@ -2,6 +2,13 @@ import { useState } from 'react'
 
 const TAG_LABELS = { web: 'Web', scram: 'Scram', nos: 'NOS' }
 
+function formatISK(isk) {
+  if (!isk) return null
+  if (isk >= 1_000_000_000) return `${(isk / 1_000_000_000).toFixed(1)}B ISK`
+  if (isk >= 1_000_000)     return `${(isk / 1_000_000).toFixed(1)}M ISK`
+  return `${isk.toLocaleString()} ISK`
+}
+
 function NpcRow({ npc }) {
   return (
     <div className="npc-row">
@@ -45,14 +52,17 @@ function SiteCard({ site }) {
 
   // Only show meta rows that have meaningful values
   const metaRows = [
-    { label: 'Webbers',    value: site.webbers,     className: site.webbers    && site.webbers    !== 'None' ? 'danger' : '' },
-    { label: 'Scramblers', value: site.scramblers,  className: site.scramblers && site.scramblers !== 'None' ? 'danger' : '' },
-    { label: 'Extras',     value: site.extras,      className: site.extras ? 'warn' : '' },
+    { label: 'Webbers',    value: site.webbers,    className: site.webbers    && site.webbers    !== 'None' ? 'danger' : '' },
+    { label: 'Scramblers', value: site.scramblers, className: site.scramblers && site.scramblers !== 'None' ? 'danger' : '' },
+    { label: 'Ships',      value: site.recommended_ships, className: '' },
   ].filter(r => r.value)
 
-  const pockets = Array.isArray(site.pockets) && typeof site.pockets[0] === 'object'
-    ? site.pockets
+  // waves is stored as JSONB in the DB — it holds the eve-survival pocket structure
+  const pockets = Array.isArray(site.waves) && typeof site.waves[0] === 'object'
+    ? site.waves
     : []
+
+  const lootDisplay = formatISK(site.loot_isk)
 
   return (
     <div className={`site-card ${open ? 'open' : ''}`}>
@@ -65,9 +75,9 @@ function SiteCard({ site }) {
             <span className={`badge badge-${site.wh_class}`}>{site.wh_class}</span>
           </div>
         </div>
-        {site.blue_loot_value && (
+        {lootDisplay && (
           <div className="summary-stats">
-            <span className="stat-loot">{site.blue_loot_value}</span>
+            <span className="stat-loot">{lootDisplay}</span>
           </div>
         )}
         <span className="chevron">▼</span>

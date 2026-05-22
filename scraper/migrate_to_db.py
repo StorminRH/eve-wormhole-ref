@@ -21,6 +21,7 @@ Expects PostgreSQL running at localhost:5432 (via docker-compose).
 from __future__ import annotations
 
 import json
+import os
 import re
 from pathlib import Path
 
@@ -29,13 +30,18 @@ from psycopg2.extras import Json
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
-DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "wormholes",
-    "user": "wh_user",
-    "password": "wh_pass",
-}
+DATABASE_URL = os.environ.get("DATABASE_URL")
+DB_CONFIG = (
+    {"dsn": DATABASE_URL}
+    if DATABASE_URL
+    else {
+        "host": "localhost",
+        "port": 5432,
+        "dbname": "wormholes",
+        "user": "wh_user",
+        "password": "wh_pass",
+    }
+)
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -214,7 +220,7 @@ ON CONFLICT (key) DO UPDATE SET
 
 def run_migration(sites: list[dict]) -> None:
     print(f"\nConnecting to database...")
-    conn = psycopg2.connect(**DB_CONFIG)
+    conn = psycopg2.connect(**DB_CONFIG)  # type: ignore[arg-type]
     cur = conn.cursor()
 
     print("Creating table if it doesn't exist...")

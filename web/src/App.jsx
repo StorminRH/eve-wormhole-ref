@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import SiteCard from './components/SiteCard'
 import './App.css'
 
-const WH_CLASSES = ['All', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'Classless']
-const SITE_TYPES = ['All', 'Cosmic Anomaly', 'Magnetometric', 'Radar', 'Gravimetric', 'Ladar']
+const WH_CLASSES = ['All', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'ORE', 'GAS', 'ICE', 'THERA']
+const SITE_TYPES = ['All', 'Cosmic Anomaly', 'Data', 'Relic', 'Gas', 'Ore', 'Ice']
 
 function App() {
   // Each useState call creates one piece of state.
@@ -19,7 +19,7 @@ function App() {
   // useEffect runs once after the component first renders (the empty [] at the end).
   // This is where we load data — we don't want to fetch on every re-render.
   useEffect(() => {
-    fetch('/sites.json')
+    fetch('/api/sites')
       .then(res => {
         if (!res.ok) throw new Error('Failed to load site data')
         return res.json()
@@ -49,7 +49,7 @@ function App() {
     <div className="app">
       <header className="header">
         <h1>Wormhole Site Reference</h1>
-        <p>EVE Online — {sites.length} sites indexed from eve-survival.org</p>
+        <p>EVE Online — {sites.length} sites indexed from multiple sources</p>
       </header>
 
       <div className="filters">
@@ -90,7 +90,7 @@ function App() {
         {filtered.map(site => (
           // key is required when rendering lists — React uses it to track
           // which items changed, were added, or were removed efficiently
-          <SiteCard key={site.name} site={site} />
+          <SiteCard key={site.key} site={site} />
         ))}
       </div>
     </div>
